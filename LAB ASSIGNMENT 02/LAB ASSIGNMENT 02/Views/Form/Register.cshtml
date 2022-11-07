@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+<form action="/Form/Register" method="post">
+    Name : <input type="text" name="Name" class="form-control" /> <br />
+    ID: <input type="text" name="ID" class="form-control" /> <br />
+    <h5>Gender:</h5>
+    <input type="radio" id="male" name="Gender" value="Male" />
+    <input type="radio" id="female" name="Gender" value="Female" /> <br /><br>
+    Password: <input type="password" name="Password" class="form-control" /> <br />
+    Confirm Password: <input type="password" name="Confirm" class="form-control" /> <br />
+    DOB: <input type="date" name="DOB" class="form-control" />
+    <input type="submit" name="Submit" value="Submit" class="alert-danger"/>
+</form>
+
