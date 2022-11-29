@@ -46,7 +46,12 @@ namespace DAL.Repos
         }
         public User Authenticate(string uname,string upass)
         {
-            return null;
+            var user = (db.Users.Find(uname));
+            if (user != null && user.Password == upass)
+            {
+                return user;
+            }
+            else return null;
         }
     }
 }

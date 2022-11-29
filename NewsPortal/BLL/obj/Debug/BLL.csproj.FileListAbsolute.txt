@@ -1,0 +1,12 @@
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\bin\Debug\BLL.dll
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\bin\Debug\BLL.pdb
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\bin\Debug\DAL.dll
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\bin\Debug\EntityFramework.dll
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\bin\Debug\DAL.pdb
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\bin\Debug\DAL.dll.config
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\bin\Debug\EntityFramework.xml
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\obj\Debug\BLL.csproj.CopyComplete
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\obj\Debug\BLL.dll
+G:\AIUB SEM 14\.NET\LAB\NewsPortal\BLL\obj\Debug\BLL.pdb

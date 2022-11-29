@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "UpdateNews";
+}
+
+<h2>UpdateNews</h2>
+<form aciton="/News/UpdateNews" method="Post">
+    <input type="text" name="Title" value="@Model.Title" />
+    <input type="text" name="CategoryId" value="@Model.CategoryId" />
+    <input type="date" name="Date" value="@Model.Date" />
+    <input type="submit" value="Update" />
+</form>

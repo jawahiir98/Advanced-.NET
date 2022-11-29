@@ -42,5 +42,18 @@ namespace BLL.Services
             var res = DataAccessFactory.GroupDataAccess().Add(converted);
             return mapper.Map<GroupDTO>(res);
         }
+        public static bool Delete(int id)
+        {
+            return DataAccessFactory.GroupDataAccess().Delete(id);  
+        }
+        public static bool Update(GroupDTO obj)
+        {
+            var config = new MapperConfiguration(cfg => {
+                cfg.CreateMap<GroupDTO, Group>();
+            });
+            var mapper = new Mapper(config);
+            var converted = mapper.Map<Group>(obj);
+            return DataAccessFactory.GroupDataAccess().Update(converted);   
+        }
     }
 }
