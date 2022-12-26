@@ -1,0 +1,65 @@
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\Shop Casket.dll.config
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\Shop Casket.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\Shop Casket.pdb
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\csc.exe
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\csc.exe.config
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\csc.rsp
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\csi.exe
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\csi.exe.config
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\csi.rsp
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.Managed.Core.targets
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.AppContext.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Collections.Immutable.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Console.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Globalization.Calendars.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.IO.Compression.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.IO.FileSystem.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Net.Http.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Net.Sockets.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Reflection.Metadata.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.ValueTuple.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Xml.XmlDocument.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Xml.XPath.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\vbc.exe
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\vbc.exe.config
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\vbc.rsp
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\VBCSCompiler.exe
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\roslyn\VBCSCompiler.exe.config
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\BLL.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\EntityFramework.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\EntityFramework.SqlServer.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\BLL.pdb
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\EntityFramework.xml
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\EntityFramework.SqlServer.xml
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\obj\Debug\Shop Casket.csproj.AssemblyReference.cache
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\obj\Debug\Shop Casket.csproj.CoreCompileInputs.cache
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\obj\Debug\Shop Casket.csproj.CopyComplete
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\obj\Debug\Shop Casket.dll
+G:\AIUB SEM 14\.NET\LAB\Shop Casket\Shop Casket\obj\Debug\Shop Casket.pdb

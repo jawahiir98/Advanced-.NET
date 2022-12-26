@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShopCasketModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CategoryAndShop">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ShopId" Type="Int32" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="SCategory" Relationship="Self.FK_CategoryAndShops_SCategories" FromRole="CategoryAndShops" ToRole="SCategories" />
+    <NavigationProperty Name="ShopUser" Relationship="Self.FK_CategoryAndShops_ShopUsers" FromRole="CategoryAndShops" ToRole="ShopUsers" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Records" Relationship="Self.FK_Records_Customers" FromRole="Customers" ToRole="Records" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Distance" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Quantity" Type="Double" Nullable="false" />
+    <Property Name="Rating" Type="Double" Nullable="false" />
+    <Property Name="ExpiryDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Discount" Type="Double" Nullable="false" />
+    <Property Name="TimeOfStock" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Purchases" Relationship="Self.FK_Purchases_Products" FromRole="Products" ToRole="Purchases" />
+  </EntityType>
+  <EntityType Name="Purchase">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Double" Nullable="false" />
+    <Property Name="RecordId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Purchases_Products" FromRole="Purchases" ToRole="Products" />
+    <NavigationProperty Name="Record" Relationship="Self.FK_Purchases_Records" FromRole="Purchases" ToRole="Records" />
+  </EntityType>
+  <EntityType Name="Record">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Total" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_Records_Customers" FromRole="Records" ToRole="Customers" />
+    <NavigationProperty Name="Purchases" Relationship="Self.FK_Purchases_Records" FromRole="Records" ToRole="Purchases" />
+  </EntityType>
+  <EntityType Name="SCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CategoryAndShops" Relationship="Self.FK_CategoryAndShops_SCategories" FromRole="SCategories" ToRole="CategoryAndShops" />
+  </EntityType>
+  <EntityType Name="ShopUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CategoryAndShops" Relationship="Self.FK_CategoryAndShops_ShopUsers" FromRole="ShopUsers" ToRole="CategoryAndShops" />
+  </EntityType>
+  <EntityType Name="UserType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Keys" Relationship="ShopCasketModel.FK_Keys_UserTypes" FromRole="UserType" ToRole="Key" />
+  </EntityType>
+  <Association Name="FK_CategoryAndShops_SCategories">
+    <End Role="SCategories" Type="Self.SCategory" Multiplicity="1" />
+    <End Role="CategoryAndShops" Type="Self.CategoryAndShop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SCategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CategoryAndShops">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryAndShops_ShopUsers">
+    <End Role="ShopUsers" Type="Self.ShopUser" Multiplicity="1" />
+    <End Role="CategoryAndShops" Type="Self.CategoryAndShop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShopUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CategoryAndShops">
+        <PropertyRef Name="ShopId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Records_Customers">
+    <End Role="Customers" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Records" Type="Self.Record" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Records">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Purchases_Products">
+    <End Role="Products" Type="Self.Product" Multiplicity="1" />
+    <End Role="Purchases" Type="Self.Purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Purchases">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Purchases_Records">
+    <End Role="Records" Type="Self.Record" Multiplicity="1" />
+    <End Role="Purchases" Type="Self.Purchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Records">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Purchases">
+        <PropertyRef Name="RecordId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ShopCasketEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="CategoryAndShops" EntityType="Self.CategoryAndShop" />
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="Locations" EntityType="Self.Location" />
+    <EntitySet Name="PCategories" EntityType="Self.PCategory" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Purchases" EntityType="Self.Purchase" />
+    <EntitySet Name="Records" EntityType="Self.Record" />
+    <EntitySet Name="SCategories" EntityType="Self.SCategory" />
+    <EntitySet Name="ShopUsers" EntityType="Self.ShopUser" />
+    <EntitySet Name="UserTypes" EntityType="Self.UserType" />
+    <AssociationSet Name="FK_CategoryAndShops_SCategories" Association="Self.FK_CategoryAndShops_SCategories">
+      <End Role="SCategories" EntitySet="SCategories" />
+      <End Role="CategoryAndShops" EntitySet="CategoryAndShops" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryAndShops_ShopUsers" Association="Self.FK_CategoryAndShops_ShopUsers">
+      <End Role="ShopUsers" EntitySet="ShopUsers" />
+      <End Role="CategoryAndShops" EntitySet="CategoryAndShops" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Records_Customers" Association="Self.FK_Records_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Records" EntitySet="Records" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Purchases_Products" Association="Self.FK_Purchases_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Purchases" EntitySet="Purchases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Purchases_Records" Association="Self.FK_Purchases_Records">
+      <End Role="Records" EntitySet="Records" />
+      <End Role="Purchases" EntitySet="Purchases" />
+    </AssociationSet>
+    <EntitySet Name="Keys" EntityType="ShopCasketModel.Key" />
+    <AssociationSet Name="FK_Keys_UserTypes" Association="ShopCasketModel.FK_Keys_UserTypes">
+      <End Role="UserType" EntitySet="UserTypes" />
+      <End Role="Key" EntitySet="Keys" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Key">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Token" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Creation" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Expiration" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UserType" Relationship="ShopCasketModel.FK_Keys_UserTypes" FromRole="Key" ToRole="UserType" />
+  </EntityType>
+  <Association Name="FK_Keys_UserTypes">
+    <End Type="ShopCasketModel.UserType" Role="UserType" Multiplicity="1" />
+    <End Type="ShopCasketModel.Key" Role="Key" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Key">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
