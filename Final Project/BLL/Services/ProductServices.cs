@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace BLL.Services
 {
@@ -56,7 +57,7 @@ namespace BLL.Services
             var rtrs = mapper.Map<ProductDTO>(rs);
             return rtrs;
         }
-        public static bool Detele(int id)
+        public static bool Delete(int id)
         {
             return DataAccessFactory.ProductData().Delete(id);
         }
